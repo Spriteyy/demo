@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="suitename">
+    <test name="runAll">
+        <classes>
+            <class name="com.course.testng.groups.GroupsOnClass1"></class>
+            <class name="com.course.testng.groups.GroupsOnClass2"></class>
+            <class name="com.course.testng.groups.GroupsOnClass3"></class>
+        </classes>
+    </test>
+    <test name="onlyRunStu">
+        //需要运行特定组的内容，需要单独将要运行的组进行配置
+        <groups>
+            <run>   //run标签包含需要运行的组
+                <include name="stu"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.course.testng.groups.GroupsOnClass1"></class>
+            <class name="com.course.testng.groups.GroupsOnClass2"></class>
+            <class name="com.course.testng.groups.GroupsOnClass3"></class>
+        </classes>
+    </test>
+</suite>
