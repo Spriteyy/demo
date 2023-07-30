@@ -30,7 +30,7 @@ public class SwaggerConfig {
         return new ApiInfoBuilder().title("我的接口文档")
                 .contact(new Contact("yangqiang","","1528119595@qq.com"))
                 .description("这是我的swaggerui生成的接口文档")
-                .version("1.0.0.0")
+                .version("1.0.0")
                 .build();
     }
 }
