@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @create 2023-07-29 15:10
  */
 @SpringBootApplication
-@ComponentScan("com.course.server")    //将要扫描的包
+@ComponentScan("com.course")    //将要扫描的包
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class,args);
